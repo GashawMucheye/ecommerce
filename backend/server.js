@@ -1,6 +1,5 @@
 const express = require('express');
-const { config } = require('dotenv');
-config();
+const dotenv = require('dotenv').config();
 
 const colors = require('colors');
 colors;
@@ -9,7 +8,7 @@ const { getTime } = require('./middleware/middle');
 const router = require('./routers/productRouter');
 const app = express();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 //!middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
