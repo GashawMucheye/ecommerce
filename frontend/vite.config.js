@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'https://mern-stack-5dxo.onrender.com/',
 
         changeOrigin: true,
       },
