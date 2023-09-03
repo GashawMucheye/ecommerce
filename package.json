@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/server.js",
-    "dev": "node backend/server.js",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
     "build": "npm install --legacy-pear-deps && npm install --legacy-pear-deps --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
