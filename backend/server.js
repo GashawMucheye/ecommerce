@@ -4,8 +4,8 @@ const path = require('path');
 
 const colors = require('colors');
 
-// const { getTime } = require('./middleware/middle');
-// const router = require('./routers/productRouter');
+const { getTime } = require('./middleware/middle');
+const router = require('./routers/productRouter');
 const app = express();
 
 const PORT = process.env.PORT || 8080;
@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// app.use(getTime);
-// app.use('/api/products', router);
+app.use(getTime);
+app.use('/api/products', router);
 
 //------------------deployment-------------------
 
